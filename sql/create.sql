@@ -13,3 +13,22 @@ INSERT INTO Users (userId, username, profileImg) VALUES
 ('dsa', '김기재', 'profile003.jpg'),
 ('kioui', '윤세민', 'profile004.jpg'),
 ('alchohol', '고태우', 'profile005.jpg');
+
+
+------------------------------
+
+SELECT userId, username 
+FROM Users 
+ORDER BY created DESC 
+LIMIT 1;
+
+SELECT username 
+FROM Users 
+WHERE userId = 'asd';
+
+DELETE FROM Users 
+WHERE username = '박근원';
+
+UPDATE Users 
+SET userId = 'dsa' 
+WHERE username = '김기재';
